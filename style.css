@@ -1,0 +1,30 @@
+#border{
+    background: #F1F1F1;
+    border-style: hidden;
+    border-radius: 15px;
+    text-align: center;
+    width: 50%;
+    padding: 5%;
+    margin: auto
+
+}
+#inborder{
+    border-style:dashed;
+    position:relative;
+    width: 40%;
+}
+#h2{
+    color: red;
+}
+#Intro{
+    text-align: center;
+   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: bold; 
+}
+#firstWord{
+    color: green;
+}
+#Ourselves{
+    text-align: left;
+    font-family: "Lucida Console", Monaco, monospace;
+}

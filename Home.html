@@ -1,12 +1,23 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/Eggplant/jquery-ui.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    
     <title>Hudon Blinds and More</title>
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  
     </head>
     
     <body>
-        <div id="border">
+        <ul>
+            <li class="ui-corner-all"><a href="Home.html">Home</a></li>
+            <li class="ui-corner-all"><a href="HudsonTeam.html">About US</a></li>
+            <li class="ui-corner-all"><a href="Contact.html">Contact</a></li>
+        </ul>
+          
+        <div class="border ui-corner-all" id="border">
             <div id="firstborder">
                 <h3><b><span id="firstWord">Welcome</span> to Hudson Blinds &#38;Shutters!</b></h3>
                
@@ -22,11 +33,31 @@
             </div>
             
         </div>  
-
+        <div id="manifacture">
+        <h3>MANIFACTURING</h3>
+        <p> Manufacturing Wood and Faux Wood Blinds for over 15 years.</p>
+        
+            
+                <label for="Selectmenu">Also Offering:</label>
+                <select name="Selectmenu" id="product">
+                  <option>Bambo Shades</option>
+                  <option>High Quality Shades</option>
+                  <option>Honey Comb Shades</option>
+                  <option>Roller Shades</option>
+                  
+            </select>
+            
+        </div>
     <footer id="footer">
         <p>Copyright © Hudson Blinds &#38; More All rights reserved.</p>
         <p>3073 McCall Dr Suite 1, Doraville, GA 30343</p>
         
         </footer>
+        
+        <script>
+        $( function() {
+    $( ".Selectmenu" ).selectmenu();
+  } );
+        </script>
     </body>
 </html>

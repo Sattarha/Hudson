@@ -1,7 +1,36 @@
-*{margin:0; padding:0}
-#border{
-    background: #F1F1F1;
-    border-style: hidden;
+body{
+    background-image: url(blind3.jpg);
+    background-size: 100%;
+}
+ul {
+ list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float:left;
+}
+li{
+    position: relative;
+    left: 40%;
+    top: %50;
+}
+li a {
+display: block;
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+.border{
+ 
+    background: ;
+    border-style:groove;
     border-radius: 15px;
     text-align: center;
     width: 70%;
@@ -21,7 +50,7 @@
  
 }
 #secondborder{
-    border-style:inherit;
+    border-style:hidden;
     width: 35%;
     float:left;
     font-family: "Lucida Console", Monaco, monospace;
@@ -34,6 +63,19 @@
 }
 #firstWord{
     color: green;
+}
+#manifacture{
+    border-style:groove;
+    border-radius: 15px;
+    width: 70%;
+    height: auto;
+    padding: 5%;
+    margin: auto;
+    overflow: auto;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 16px;
+    text-align: center;
+    color: #333; 
 }
 #footer{
     position: fixed;

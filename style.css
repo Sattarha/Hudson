@@ -3,28 +3,43 @@
     border-style: hidden;
     border-radius: 15px;
     text-align: center;
-    width: 50%;
+    width: 70%;
+    height: auto;
     padding: 5%;
-    margin: auto
-
+    margin: auto;
+    overflow: auto;
+ 
 }
-#inborder{
-    border-style:dashed;
-    position:relative;
-    width: 40%;
+#firstborder{
+    border-style:hidden;
+    width: 60%;
+    float: right;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 12px;
+     text-align: left;
+ 
+}
+#secondborder{
+    border-style:inherit;
+    width: 35%;
+    float:left;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 13px;
+    text-align: left;
+
 }
 #h2{
     color: red;
 }
-#Intro{
-    text-align: center;
-   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-weight: bold; 
-}
 #firstWord{
     color: green;
 }
-#Ourselves{
-    text-align: left;
-    font-family: "Lucida Console", Monaco, monospace;
+#footer{
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
 }

@@ -1,5 +1,5 @@
+* { margin: 0; padding: 0; }
 body{
-    background-image: url(blind3.jpg);
     background-size: 100%;
 }
 ul {
@@ -7,6 +7,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+      font-size: 150%;
 }
 li {
   float:left;
@@ -29,14 +30,15 @@ li a:hover {
 }
 .border{
  
-    background: ;
+    background:#F6F6F6;
     border-style:groove;
     border-radius: 15px;
     text-align: center;
-    width: 70%;
+    width: 50%;
     height: auto;
     padding: 5%;
     margin: auto;
+    margin-top: 5%;
     overflow: auto;
  
 }
@@ -45,8 +47,10 @@ li a:hover {
     width: 60%;
     float: right;
     font-family: "Lucida Console", Monaco, monospace;
-    font-size: 12px;
+    font-size: 16px;
+    line-height: 20px;
      text-align: left;
+    
  
 }
 #secondborder{
@@ -54,7 +58,8 @@ li a:hover {
     width: 35%;
     float:left;
     font-family: "Lucida Console", Monaco, monospace;
-    font-size: 13px;
+    font-size: 16px;
+    line-height: 24px;
     text-align: left;
 
 }
@@ -65,15 +70,18 @@ li a:hover {
     color: green;
 }
 #manifacture{
+    background-color: #F6F6F6
     border-style:groove;
     border-radius: 15px;
-    width: 70%;
+    width: 50%;
     height: auto;
     padding: 5%;
     margin: auto;
+    margin-top: 3%;
     overflow: auto;
     font-family: "Lucida Console", Monaco, monospace;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 24px;
     text-align: center;
     color: #333; 
 }

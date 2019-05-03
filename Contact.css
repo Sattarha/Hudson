@@ -4,7 +4,7 @@
  list-style-type: none;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #323A45;
     font-size: 150%;
 }
 #list {
@@ -36,7 +36,8 @@ display: block;
     padding: 3%;
     margin: auto;
     overflow: auto;
-    margin-bottom: 2%;
+    margin-bottom: .5%;
+    margin-top: .5%
 }
 
 #postal{

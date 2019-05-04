@@ -1,4 +1,6 @@
+* { margin: 0; padding: 0; }
 body{
+<<<<<<< HEAD
     background-color: whitesmoke;
     background-size: 100%;
     width: auto;
@@ -72,6 +74,10 @@ body{
     17% { opacity: 1 }
     25% { opacity: 0 }
     100% { opacity: 0 }
+=======
+    background-size: 120%;
+    background-image: url(blind.jpg);
+>>>>>>> 162ff2b31fa8a29dadf273606dadce1c79886581
 }
 
 @-ms-keyframes imageAnimation {
@@ -98,7 +104,8 @@ ul {
  list-style-type: none;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #323A45;
+      font-size: 150%;
 }
 li {
   float:left;
@@ -120,15 +127,21 @@ li a:hover {
   color: white;
 }
 .border{
+<<<<<<< HEAD
 
     background: ;
+=======
+ 
+    background:#F6F6F6;
+>>>>>>> 162ff2b31fa8a29dadf273606dadce1c79886581
     border-style:groove;
     border-radius: 15px;
     text-align: center;
-    width: 70%;
+    width: 50%;
     height: auto;
     padding: 5%;
     margin: auto;
+    margin-top: 5%;
     overflow: auto;
  
 }
@@ -137,9 +150,13 @@ li a:hover {
     width: 60%;
     float: right;
     font-family: "Lucida Console", Monaco, monospace;
-    font-size: 12px;
+    font-size: 16px;
+    line-height: 20px;
      text-align: left;
+<<<<<<< HEAD
     color: black;
+=======
+>>>>>>> 162ff2b31fa8a29dadf273606dadce1c79886581
     
  
 }
@@ -148,7 +165,8 @@ li a:hover {
     width: 35%;
     float:left;
     font-family: "Lucida Console", Monaco, monospace;
-    font-size: 13px;
+    font-size: 16px;
+    line-height: 24px;
     text-align: left;
 
 }
@@ -159,15 +177,22 @@ li a:hover {
     color: green;
 }
 #manifacture{
+<<<<<<< HEAD
     border-style:none;
+=======
+    background-color: #F6F6F6;
+    border-style:groove;
+>>>>>>> 162ff2b31fa8a29dadf273606dadce1c79886581
     border-radius: 15px;
-    width: 70%;
+    width: 50%;
     height: auto;
     padding: 5% 5%;
     margin: auto;
+    margin-top: 3%;
     overflow: auto;
     font-family: "Lucida Console", Monaco, monospace;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 24px;
     text-align: center;
     color: #333; 
 }
@@ -175,8 +200,9 @@ li a:hover {
     position: fixed;
    left: 0;
    bottom: 0;
+    height: auto;
    width: 100%;
-   background-color: black;
+   background-color: #323A45;
    color: white;
    text-align: center;
 }

@@ -1,12 +1,105 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-    
+    <link href="Contact.css" rel="stylesheet" type="text/css" media="all">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            </head>
+
     <body>
-        <h1>Contact Page</h1>
-        
-        
+     
+        <ul id="menu">
+            <li id="list" class="ui-corner-all"><a href="Home.html">Home</a></li>
+            <li id="list" class="ui-corner-all"><a href="HudsonTeam.html">About US</a></li>
+            <li id="list" class="ui-corner-all"><a href="Contact.html">Contact</a></li>
+        </ul>
+        <div id="all">
+        <div id="postal">
+            <h3>Postal Address</h3>
+            <p>3073 McCall Dr Suite 1,<br>
+                GA 30343</p>
+            <br>
+            <h3>Costumer Service</h3>
+            <p>Telephone: +1 678-542-2499</p>
+            <p>Fax:       +1 678-542-2491</p>
+            <p>E-MAIL:    info@hudsonblind.com</p>
+        </div>
+        <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3311.647369738233!2d-84.26488043431156!3d33.89873453064795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d33.8989306!2d-84.2628744!4m5!1s0x88f5a764e84c1d3b%3A0x6f3efc431716b940!2s3073+McCall+Dr%2C+Doraville%2C+GA+30340!3m2!1d33.8989128!2d-84.26294949999999!5e0!3m2!1sen!2sus!4v1556769001781!5m2!1sen!2sus" width="450" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+        </div>
+            </div>
+        <div id="contact">
+            <h1 class="title">Contact Us</h1>
+            <form id="form"  class="form" name="input"  action="https://formspree.io/salarattarha@gmail.com" method="po">
+                <ul>
+                            <li>
+                <label for="name"></label>
+                <input type="text" placeholder="Your Name" id="name" name="name" tabindex="1"/>
+                    </li>
+                    <li>
+                    <label for="email"></label>
+                <input type="email" placeholder="Your Email" id="email" name="_replyto" tabindex="2"/>
+                    </li>
+                    <li>
+                <label for="message"></label>
+                <textarea placeholder="Message…" id="message" name="message" tabindex="3"></textarea>
+            </li>
+                </ul>
+              
+                <input type="submit" value="Send Message" id="submit"/>
+            
+            </form>
+            </div>
+         <footer id="footer">
+        <p>Copyright © Hudson Blinds &#38; More All rights reserved.</p> 
+        </footer>
         </body>
+    <script type="application/javascript">
+    $(document).ready(function(){
+  
+  //Hiding Labels Initially
+  $('form li').each(function(){
+    $(this).addClass('js-hide-label');
+  });
+  
+  //Now adding and removing classes on Events - keyup,blur,focus
+  $('form li').find('input,textarea').on('keyup blur focus',function(e) {
     
-    </head>
+      var $this = $(this),
+          $parent = $this.parent();
+      
+      if(e.type=='keyup') {
+          if($this.val()==''){
+            $parent.addClass('js-hide-label');
+          }
+          else{
+            $parent.removeClass('js-hide-label') ;
+          }
+      }
+    else if(e.type=='blur'){
+      if($this.val()==''){
+        $parent.addClass('js-hide-label');
+      }
+      else{
+        $parent.removeClass('js-hide-label , js-highlight-label').addClass('js-unhighlight-label');
+      }
+    }
+    
+      else if(e.type=='focus'){
+        
+        if($this.val()==''){
+          $parent.addClass('js-hide-label');
+        }
+        else{
+        $parent.addClass('js-highlight-label');
+        }
+        
+      }
+    
+  });
+  
+});
+    </script>
+    
 </html>
